@@ -49,7 +49,7 @@ function calculateSize() {
   }
 
   let totalWidth = headsRow * 164;
-  let totalHeight = headsColumn * headHeight;
+  let totalHeight = (headsColumn * headHeight) + 380;
 
   let totalWidthHD = totalWidth * 2;
   let totalHeightHD = totalHeight * 2;
