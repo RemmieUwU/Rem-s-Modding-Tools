@@ -44,7 +44,7 @@ function calculateSize() {
   let headHeight = parseInt(document.getElementById("headHeight").value) || 0;
 
   if (headsRow <= 0 || headsColumn <= 0 || headHeight <= 0) {
-    document.getElementById("output").innerHTML = "Please enter valid numbers.";
+    document.getElementById("output").innerHTML = "Please enter correct numbers!";
     return;
   }
 
