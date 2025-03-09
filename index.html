@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta content="width=device-width,initial-scale=1" name="viewport" />
+      <link rel="stylesheet" href="css/style.css">
+      <title>Rem's modding tools</title>
+    </head>
+    <body>
+    <div class="footer">
+        <p>Created by: <a href="https://www.youtube.com/@rin.Incredibox">@Rem - Incredibox</a></p>
+    </div>
+    <div class="button-zone">
+        <button onclick="showLoopTab()" id="audio-tab" class="clicked">Find Looptime</button>
+        <button onclick="showSizeTab()" id="size-tab">Sprite sheet Size</button>
+    </div>
+    <div class="audio-tab" id="__loop-tab">
+        <h2>Select an Audio File:</h2>
+        <input accept=audio/* id=audioInput type=file>
+        <p class="hide" id="durationOutput">looptime:</p>
+    </div>
+    <div class="size-tab tab-hidden" id="__size-tab">
+        <h2>Calculate Sprite Size</h2>
+        <div class="size-tab__input">
+            <label>Heads in Row:</label>
+            <input type="number" id="headsRow" value="8"><br>
+        
+            <label>Heads in Column:</label>
+            <input type="number" id="headsColumn" value="3"><br>
+        
+            <label>Head Height (px):</label>
+            <input type="number" id="headHeight" value="213"><br>
+        
+            <button onclick="calculateSize()">Calculate</button>
+        
+            <div class="result" id="output"></div>
+    </div>
+    <script src="js/script.js"></script>
+    </body>
+</html>
